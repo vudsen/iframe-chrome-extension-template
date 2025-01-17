@@ -1,0 +1,33 @@
+{
+  "name": "iframe-chrome-extension-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare:dev": "node script/prepare-dev.mjs",
+    "dev": "pnpm run dev:pages",
+    "dev:pages": "vite --config script/vite/pages.config.ts",
+    "dev:scripts": "vite build --config script/vite/script.config.ts --watch",
+    "build": "node script/build-all.mjs"
+  },
+  "dependencies": {
+    "cross-iframe-rpc": "^1.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@eslint/js": "^9.17.0",
+    "@types/chrome": "^0.0.297",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5"
+  }
+}

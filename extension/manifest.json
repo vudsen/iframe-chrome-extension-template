@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Iframe chrome extension",
+  "version": "1.0.0",
+  "description": "A basic example extension with only required keys",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "pages/popup.html"
+  },
+  "options_page": "pages/options.html",
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content-script.iife.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
