@@ -3,12 +3,12 @@ const App = () => {
 
   return (
     <div>
-      <div>
+      <h1 style={{fontWeight: 'bold'}}>
         Options page
-      </div>
-      <div>
+      </h1>
+      <div style={{marginTop: 15, marginBottom: 15}}>
         <span>Edit </span>
-        <code>src/pages/options/App.tsx</code>
+        <code style={{color: 'grey'}}>src/pages/options/App.tsx</code>
         <span> to update this page.</span>
       </div>
       <div>
